@@ -143,7 +143,7 @@ export default function DashboardPage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <h3 className="text-xl font-semibold text-white mb-2">Referral Program</h3>
-              <p className="text-gray-400">Earn 10% of your referrals' earnings forever</p>
+              <p className="text-gray-400">Earn 10% of your referrals&apos; earnings forever</p>
             </div>
             <div className="text-right">
               <div className="text-2xl font-bold text-grass-400">{referralCount}</div>

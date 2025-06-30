@@ -25,7 +25,7 @@ export default function LoginPage() {
     try {
       await login(email, password);
       router.replace('/dashboard');
-    } catch (err) {
+    } catch {
       setError('Invalid email or password');
     }
   };
@@ -71,7 +71,7 @@ export default function LoginPage() {
             </form>
             {/* Links */}
             <div className="mt-6 text-center space-y-4">
-              <a href="/register" className="text-grass-400 hover:text-grass-300 transition-colors text-sm">Don't have an account? Sign up</a>
+              <a href="/register" className="text-grass-400 hover:text-grass-300 transition-colors text-sm">Don&apos;t have an account? Sign up</a>
               <div className="text-xs text-gray-500">Secure • Private • Rewarding</div>
             </div>
           </motion.div>

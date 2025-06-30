@@ -38,7 +38,7 @@ export default function ReferralsPage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold text-white mb-2">Referral Program</h1>
-              <p className="text-gray-400">Earn 10% commission from your referrals' earnings forever</p>
+              <p className="text-gray-400">Earn 10% commission from your referrals&apos; earnings forever</p>
             </div>
             <div className="flex items-center space-x-2">
               <FaShareAlt className="w-5 h-5 text-grass-400" />
