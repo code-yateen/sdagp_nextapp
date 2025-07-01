@@ -6,7 +6,7 @@ import { FaChartLine, FaCalendarAlt, FaDollarSign, FaUsers } from 'react-icons/f
 import { useData } from '@/contexts/DataContext';
 
 export default function AnalyticsPage() {
-  const { earnings } = useData();
+  
 
   const monthlyData = [
     { month: 'Jan', earnings: 45.23, bandwidth: 120 },

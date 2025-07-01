@@ -43,7 +43,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     setIsLoading(false);
   }, []);
 
-  const login = async (email: string, password: string) => {
+  const login = async (email: string, _password: string) => {
     setIsLoading(true);
     try {
       await new Promise(resolve => setTimeout(resolve, 1000));
@@ -55,14 +55,14 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       };
       setUser(mockUser);
       localStorage.setItem('sdagp_user', JSON.stringify(mockUser));
-    } catch (error) {
+    } catch {
       throw new Error('Login failed');
     } finally {
       setIsLoading(false);
     }
   };
 
-  const register = async (email: string, password: string, username: string) => {
+  const register = async (email: string, _password: string, username: string) => {
     setIsLoading(true);
     try {
       await new Promise(resolve => setTimeout(resolve, 1000));
@@ -74,7 +74,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       };
       setUser(mockUser);
       localStorage.setItem('sdagp_user', JSON.stringify(mockUser));
-    } catch (error) {
+    } catch {
       throw new Error('Registration failed');
     } finally {
       setIsLoading(false);

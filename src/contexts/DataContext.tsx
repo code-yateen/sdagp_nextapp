@@ -60,7 +60,7 @@ export const DataProvider = ({ children }: DataProviderProps) => {
   const [isOnline, setIsOnline] = useState(false);
   const [connectionStatus, setConnectionStatus] = useState<'connected' | 'connecting' | 'offline' | 'syncing'>('connecting');
   const [referralCode] = useState(() => crypto.randomUUID().slice(0, 8).toUpperCase());
-  const [referralCount, setReferralCount] = useState(0);
+  const [referralCount] = useState(0);
 
   useEffect(() => {
     const timer = setTimeout(() => {
